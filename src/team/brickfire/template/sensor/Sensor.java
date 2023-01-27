@@ -19,12 +19,6 @@ public abstract class Sensor<S extends UARTSensor, T> {
         this.sensor = sensor;
     }
 
-    /**
-     * Returns the wanted sensor in the given port
-     *
-     * @param port Port the sensor is plugged into (1-4)
-     * @return The sensor object
-     */
 
     public abstract T getData();
 }
