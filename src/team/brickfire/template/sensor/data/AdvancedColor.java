@@ -10,13 +10,13 @@ public class AdvancedColor extends Color {
     public AdvancedColor(EV3Color color) {
         super(color);
         this.reflectance = -1;
-        this.rgb = new float[]{ -1, -1, -1 };
+        this.rgb = new float[]{-1, -1, -1 };
     }
 
     public AdvancedColor(int id) {
         super(id);
         this.reflectance = -1;
-        this.rgb = new float[]{ -1, -1, -1 };
+        this.rgb = new float[]{-1, -1, -1 };
     }
 
     public AdvancedColor(EV3Color color, float reflectance, float[] rgb) {

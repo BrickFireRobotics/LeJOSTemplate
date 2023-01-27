@@ -15,7 +15,7 @@ public class ColorSensor<C extends Color> extends Sensor<EV3ColorSensor, C> {
         sensor.setCurrentMode(0);
     }
 
-    public static<C extends Color> ColorSensor<C> get(int port) {
+    public static <C extends Color> ColorSensor<C> get(int port) {
         if (portsUsed[port - 1] == null) {
             try {
                 ColorSensor<C> sensor = new ColorSensor<>(ports[port - 1]);
