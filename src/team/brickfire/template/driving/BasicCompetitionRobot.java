@@ -39,7 +39,7 @@ public class BasicCompetitionRobot extends DrivingBase implements CompetitionFea
      * @param wheelDiameter Diameter of the wheels
      * @param wheelOffset Distance of the wheels from the robots center
      */
-    public BasicCompetitionRobot(double wheelDiameter, double wheelOffset) {
+    protected BasicCompetitionRobot(double wheelDiameter, double wheelOffset) {
         this.motorLeft = new EV3MediumRegulatedMotor(MotorPort.C);
         this.motorRight = new EV3MediumRegulatedMotor(MotorPort.B);
         this.pilot = new CustomMovePilot(new WheeledChassis(new Wheel[]{
